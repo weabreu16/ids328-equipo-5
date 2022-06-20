@@ -29,7 +29,9 @@ jobs:
       run: npm ci
 
     - name: Analysing the code with ESLint
-      run: eslint . --ext .js
+      uses: stefanoeb/eslint-action@1.0.2
+      with:
+        files: services/
 
     - name: Build
       run: npm run build --if-present
