@@ -1,3 +1,4 @@
+const { ESLint } = require('eslint');
 
 function sum( ...args ) {
     let sum = 0;
