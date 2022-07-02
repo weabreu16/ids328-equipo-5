@@ -46,6 +46,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
     - name: Docker Container Deployment to Heroku
       uses: gonuit/heroku-docker-deploy@v1.3.3
       with:
