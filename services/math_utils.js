@@ -9,4 +9,12 @@ function sum( ...args ) {
     return sum;
 };
 
-module.exports = { sum };
+function avg( ...args ) {
+    let count = args.length;
+
+    let sum_result = sum( ...args );
+
+    return sum_result / count;
+}
+
+module.exports = { sum, avg };

@@ -15,3 +15,19 @@ test('add 3 to be 3', () => {
 test("add '3' and '5' to be '35'", () => {
     expect( math_utils.sum( '3', '5' ) ).toBe('035');
 });
+
+test("avg of 3, 1 to be 2", () => {
+    expect( math_utils.avg( 3, 1 ) ).toBe(2);
+});
+
+test('avg of 6, 2, 1 to be 3', () => {
+    expect( math_utils.avg( 6, 2, 1 ) ).toBe(3);
+});
+
+test("avg of '2','1' to be 10.5", () => {
+    expect( math_utils.avg( '2', '1' ) ).toBe(10.5);
+});
+
+test("avg of '21','a' to be NaN", () => {
+    expect( math_utils.avg( '21', 'a' ) ).toBe(NaN);
+});
