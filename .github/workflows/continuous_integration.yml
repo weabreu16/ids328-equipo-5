@@ -40,3 +40,17 @@ jobs:
 
     - name: Test
       run: npm test
+
+    - name: Upload Test Result as Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: test_results
+        path: artifacts/test_results.json
+    
+    - name: Build Image
+      run: docker build -t ids328-equipo-5:latest .
+
+    - name: Upload Image as Artifact
+      uses: ishworkh/docker-image-artifact-upload@v1
+      with:
+        image: "ids328-equipo-5:latest"

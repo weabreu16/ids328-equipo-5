@@ -5,7 +5,7 @@
   "main": "test.js",
   "scripts": {
     "start": "node app",
-    "test": "jest",
+    "test": "jest --outputFile artifacts/test_results.json --json",
     "dev": "nodemon app",
     "lint:js": "eslint src/**/*.js",
     "lint": "npm run lint:js"

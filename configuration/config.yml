@@ -1,2 +1,0 @@
-production:
-  mongo_uri: 'mongo_drive.productdb/server:1234'
