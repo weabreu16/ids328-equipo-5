@@ -17,4 +17,14 @@ function avg( ...args ) {
     return sum_result / count;
 }
 
-module.exports = { sum, avg };
+function median( ...args ) {
+    let count = args.length;
+
+    args.sort();
+
+    let medianIndex = Math.round( count / 2 ) - 1;
+
+    return args[ medianIndex ];
+}
+
+module.exports = { sum, avg, median };
