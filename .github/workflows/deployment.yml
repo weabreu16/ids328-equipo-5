@@ -4,7 +4,6 @@ name: Deployment Workflow
 on:
   workflow_run:
     workflows: ["CI Workflow"]
-    branches: [main]
     types: [completed]
 
 jobs:
