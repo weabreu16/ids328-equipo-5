@@ -11,10 +11,9 @@ jobs:
   ci:
     strategy:
       matrix:
-        os: [ ubuntu-latest, windows-latest ]
         node-version: [ 14.x, 16.x ]
     
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
