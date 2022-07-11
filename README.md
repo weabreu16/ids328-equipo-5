@@ -19,7 +19,7 @@ yarn
 ```
 
 ## How to compile?
-This project cant be compiled because its javascript project but if you want to run it, you just need to use the following commands: 
+This project can't be compiled because its Javascript project but if you want to run it, you just need to use the following commands: 
 ```
 npm start
 ```
@@ -34,8 +34,8 @@ npm test
 ```
 yarn test
 ```
-## How to deploy
-To deploy to heroku you need to use the followings commands, the docker CLI and the heroku's CLI (Command Line Interface):
+## How to deploy?
+To deploy to heroku you need to use the followings commands, the docker's CLI and the heroku's CLI (Command Line Interface):
 ```
 heroku login
 
