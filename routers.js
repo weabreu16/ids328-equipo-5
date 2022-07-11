@@ -19,4 +19,12 @@ router.get('/avg', (req, res) => {
     res.status( 200 ).send({ result });
 });
 
+router.get('/median', (req, res) => {
+    let values = req.body.values;
+
+    let result = math_utils.median( ...values );
+
+    res.status( 200 ).send({ result });
+});
+
 module.exports = router;

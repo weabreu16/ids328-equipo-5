@@ -31,3 +31,11 @@ test("avg of '2','1' to be 10.5", () => {
 test("avg of '21','a' to be NaN", () => {
     expect( math_utils.avg( '21', 'a' ) ).toBe(NaN);
 });
+
+test("median of 2, 3, 1 to be 2", () => {
+    expect( math_utils.median( 2, 3, 1 ) ).toBe(2);
+});
+
+test("median of 2, 2, 3, 1 to be 2", () => {
+    expect( math_utils.median( 2, 2, 3, 1 ) ).toBe(2);
+});
