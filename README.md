@@ -18,6 +18,7 @@ yarn
 ## Endpoints / API
 ### Math_Utils
 - Sum Values: GET `/sum`
+- Avg Values: GET `/avg`
 ```
 Json Format:
 {
