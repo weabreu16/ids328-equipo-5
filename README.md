@@ -35,7 +35,7 @@ npm test
 yarn test
 ```
 ## How to deploy?
-To deploy to heroku you need to use the followings commands, the docker's CLI and the heroku's CLI (Command Line Interface):
+To deploy to heroku you need to use the followings commands, the Docker CLI and the Heroku CLI (Command Line Interface):
 ```
 heroku login
 
